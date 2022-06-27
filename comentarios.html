@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <script src="./js/tailwindcss.js"></script>
+</head>
+
+<body class="bg-gray-200">
+    <!-- Esto es el inicio de la barra de navegacion -->
+    <header>
+        <div class="">
+            <nav class="flex justify-between fixed w-full top-0 items-center bg-amber-400 px-4 py-2 h-16">
+                <a class="flex justify-center items-center" href="./index.html">
+                    <img src="./img/Imagen3.png" alt="" class="h-16 w-full">
+                </a>
+                <div>
+                    <ul class="flex mr-16">
+                        <li>
+                            <a class="px-5 text-white font-semibold hover:text-black transition duration-600 ease-in-out"
+                                href="./index.html" on>
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a class="px-5 text-white font-semibold hover:text-black transition duration-600 ease-in-out"
+                                href="" id="coment">
+                                Comentarios
+                            </a>
+                        </li>
+                        <li>
+                            <a class="px-5 text-white font-semibold hover:text-black transition duration-600 ease-in-out"
+                                href="./lista-pedidos.html">
+                                Pedido
+                            </a>
+                        </li>
+                        <li>
+                            <a class="px-5 text-white font-semibold hover:text-black transition duration-600 ease-in-out"
+                                href="./login.html">
+                                Iniciar sesion
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Aqui termina la barra de navegacion -->
+
+    <!-- Aqui empieza el contenedor de las valoraciones del producto -->
+    <main id="comentarios" class="w-9/12 bg-white mt-32 mx-auto rounded-xl flex flex-col px-10 py-5 mb-10 shadow-2xl">
+        <!-- Esto es el titulo del contenedor -->
+        <div id="title" class="w-full h-28 pl-10 pt-8">
+            <h1 class="text-3xl">VALORACIONES</h1>
+        </div>
+        <!-- Aqui termina el titulo del contenedor -->
+
+        <!-- Aqui empieza el contenedor que explica el puntaje de las valoraciones -->
+        <div id="puntuation" class="flex space-x-10">
+            <div id="left" class="flex flex-col space-y-4 p-6">
+                <!-- Esto es el titulo de la parte izquierda que representa el puntaje maximo -->
+                <div id="calificacion" class="">
+                    <h1 class="text-8xl">4.9</h1>
+                </div>
+                <!-- Aqui termina el titulo de la parte izquierda que representa el puntaje maximo -->
+
+                <!-- Aqui estan las estrellas que simbolizan el puntaje maximo -->
+                <div id="stars" class="flex justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                </div>
+            </div>
+            <!-- Aqui terminan las estrellas que simbolizan el puntaje maximo -->
+
+            <!-- Esto es el titulo de la parte derecha que muestra la cantidad de valoraciones que tienen los productos separados por puntuacion -->
+            <div id="right" class="flex w-full px-2">
+                <div id="five" class="flex flex-col justify-center w-full px-4">
+                    <div id="porcentaje" class="flex items-center space-x-5">
+                        <div id="n-stars" class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <h1 class="text-2xl">5</h1>
+                        </div>
+                        <div id="cantidad" class="h-6 bg-green-400 w-full rounded">
+                            <h1 class="ml-5">232,536</h1>
+                        </div>
+                    </div>
+                    <div id="porcentaje" class="flex items-center space-x-5">
+                        <div id="n-stars" class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <h1 class="text-2xl">4</h1>
+                        </div>
+                        <div id="cantidad" class="h-6 bg-green-400 w-4/5 rounded">
+                            <h1 class="ml-5">132,536</h1>
+                        </div>
+                    </div>
+                    <div id="porcentaje" class="flex items-center space-x-5">
+                        <div id="n-stars" class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <h1 class="text-2xl">3</h1>
+                        </div>
+                        <div id="cantidad" class="h-6 bg-green-400 w-3/5 rounded">
+                            <h1 class="ml-5">1,536</h1>
+                        </div>
+                    </div>
+                    <div id="porcentaje" class="flex items-center space-x-5">
+                        <div id="n-stars" class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <h1 class="text-2xl">2</h1>
+                        </div>
+                        <div id="cantidad" class="h-6 bg-green-400 w-2/5 rounded">
+                            <h1 class="ml-5">1,239</h1>
+                        </div>
+                    </div>
+                    <div id="porcentaje" class="flex items-center space-x-5">
+                        <div id="n-stars" class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <h1 class="text-2xl">1</h1>
+                        </div>
+                        <div id="cantidad" class="h-6 bg-green-400 w-1/5 rounded">
+                            <h1 class="ml-5">536</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Aqui termina el contenedor que explica el puntaje de las valoraciones-->
+
+        <!-- Aqui empieza el contenedor que indica los comentarios a continuacion -->
+        <div id="comentarios" class="mt-10 mx-20">
+            <!-- Aqui se encuentran el titulo que indica que a continuacion se muestran los comentarios -->
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl">Comentarios</h1>
+            </div>
+            <!-- Aqui termina el titulo que indica que a continuacion se muestran los comentarios -->
+        </div>
+        <!-- Aqui termina el contenedor que indica los comentarios a continuacion -->
+
+        <!-- Aqui empieza el contenedor que muestra los comentarios hacia el servicio y producto -->
+        <div id="coment-users" class="mt-6 flex flex-col">
+            <!-- Esto es el contenedor del comentario de un usuario -->
+            <div id="user" class="flex space-x-4 w-full justify-between mb-12">
+                <!-- Esto es el contenedor de la imagen -->
+                <div id="img-left" class="">
+                    <img src="./img/user-img.jpg" class="w-96 rounded-full">
+                </div>
+                <!-- Aqui termina el contenedor de la imagen-->
+
+                <!-- Esto es el contenedor todos los comentarios de los usuarios -->
+                <div id="right" class="flex flex-col ml-5">
+                    <!-- Esto es el contenedor del contenido del comentario de un usuario -->
+                    <div id="data">
+                        <h1 class="text-xl">Juan Perez</h1>
+                        <div id="stars" class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <div id="contain" class="pr-20">
+                            <p class="text-sm">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quisquam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni atque
+                                saepe, ratione impedit hic cum similique delectus, assumenda aliquam nostrum libero aut
+                                autem provident itaque nemo? Esse laudantium quod vero. Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Corrupti dolores non optio, nostrum id odio, ad fugiat
+                                tempora atque consequatur ipsa cum deleniti? Tenetur, deleniti? Fuga, iure. Praesentium,
+                                molestiae eius! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                                eum itaque ab aspernatur nulla dicta blanditiis dolorum distinctio? Enim sapiente natus
+                                ex quis officia tempora nisi voluptas quasi! Non, nesciunt.
+                                lorem
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Aqui termina el contenedor del comentario del usuario -->
+            <!-- Esto es el contenedor del comentario de un usuario -->
+            <div id="user" class="flex space-x-4 w-full justify-between mb-12">
+                <!-- Esto es el contenedor de la imagen -->
+                <div id="img-left" class="">
+                    <img src="./img/user-img.jpg" class="w-96 rounded-full">
+                </div>
+                <!-- Aqui termina el contenedor de la imagen-->
+
+                <!-- Esto es el contenedor todos los comentarios de los usuarios -->
+                <div id="right" class="flex flex-col ml-5">
+                    <!-- Esto es el contenedor del contenido del comentario de un usuario -->
+                    <div id="data">
+                        <h1 class="text-xl">Juan Perez</h1>
+                        <div id="stars" class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <div id="contain" class="pr-20">
+                            <p class="text-sm">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quisquam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni atque
+                                saepe, ratione impedit hic cum similique delectus, assumenda aliquam nostrum libero aut
+                                autem provident itaque nemo? Esse laudantium quod vero. Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Corrupti dolores non optio, nostrum id odio, ad fugiat
+                                tempora atque consequatur ipsa cum deleniti? Tenetur, deleniti? Fuga, iure. Praesentium,
+                                molestiae eius! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                                eum itaque ab aspernatur nulla dicta blanditiis dolorum distinctio? Enim sapiente natus
+                                ex quis officia tempora nisi voluptas quasi! Non, nesciunt.
+                                lorem
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Aqui termina el contenedor del comentario del usuario -->
+            <!-- Esto es el contenedor del comentario de un usuario -->
+            <div id="user" class="flex space-x-4 w-full justify-between mb-12">
+                <!-- Esto es el contenedor de la imagen -->
+                <div id="img-left" class="">
+                    <img src="./img/user-img.jpg" class="w-96 rounded-full">
+                </div>
+                <!-- Aqui termina el contenedor de la imagen-->
+
+                <!-- Esto es el contenedor todos los comentarios de los usuarios -->
+                <div id="right" class="flex flex-col ml-5">
+                    <!-- Esto es el contenedor del contenido del comentario de un usuario -->
+                    <div id="data">
+                        <h1 class="text-xl">Juan Perez</h1>
+                        <div id="stars" class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <div id="contain" class="pr-20">
+                            <p class="text-sm">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quisquam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni atque
+                                saepe, ratione impedit hic cum similique delectus, assumenda aliquam nostrum libero aut
+                                autem provident itaque nemo? Esse laudantium quod vero. Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Corrupti dolores non optio, nostrum id odio, ad fugiat
+                                tempora atque consequatur ipsa cum deleniti? Tenetur, deleniti? Fuga, iure. Praesentium,
+                                molestiae eius! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                                eum itaque ab aspernatur nulla dicta blanditiis dolorum distinctio? Enim sapiente natus
+                                ex quis officia tempora nisi voluptas quasi! Non, nesciunt.
+                                lorem
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Aqui termina el contenedor del comentario del usuario -->
+            <!-- Esto es el contenedor del comentario de un usuario -->
+            <div id="user" class="flex space-x-4 w-full justify-between mb-12">
+                <!-- Esto es el contenedor de la imagen -->
+                <div id="img-left" class="">
+                    <img src="./img/user-img.jpg" class="w-96 rounded-full">
+                </div>
+                <!-- Aqui termina el contenedor de la imagen-->
+
+                <!-- Esto es el contenedor todos los comentarios de los usuarios -->
+                <div id="right" class="flex flex-col ml-5">
+                    <!-- Esto es el contenedor del contenido del comentario de un usuario -->
+                    <div id="data">
+                        <h1 class="text-xl">Juan Perez</h1>
+                        <div id="stars" class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <div id="contain" class="pr-20">
+                            <p class="text-sm">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quisquam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni atque
+                                saepe, ratione impedit hic cum similique delectus, assumenda aliquam nostrum libero aut
+                                autem provident itaque nemo? Esse laudantium quod vero. Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Corrupti dolores non optio, nostrum id odio, ad fugiat
+                                tempora atque consequatur ipsa cum deleniti? Tenetur, deleniti? Fuga, iure. Praesentium,
+                                molestiae eius! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                                eum itaque ab aspernatur nulla dicta blanditiis dolorum distinctio? Enim sapiente natus
+                                ex quis officia tempora nisi voluptas quasi! Non, nesciunt.
+                                lorem
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Aqui termina el contenedor del comentario del usuario -->
+            <!-- Esto es el contenedor del comentario de un usuario -->
+            <div id="user" class="flex space-x-4 w-full justify-between mb-12">
+                <!-- Esto es el contenedor de la imagen -->
+                <div id="img-left" class="">
+                    <img src="./img/user-img.jpg" class="w-96 rounded-full">
+                </div>
+                <!-- Aqui termina el contenedor de la imagen-->
+
+                <!-- Esto es el contenedor todos los comentarios de los usuarios -->
+                <div id="right" class="flex flex-col ml-5">
+                    <!-- Esto es el contenedor del contenido del comentario de un usuario -->
+                    <div id="data">
+                        <h1 class="text-xl">Juan Perez</h1>
+                        <div id="stars" class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <div id="contain" class="pr-20">
+                            <p class="text-sm">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quisquam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni atque
+                                saepe, ratione impedit hic cum similique delectus, assumenda aliquam nostrum libero aut
+                                autem provident itaque nemo? Esse laudantium quod vero. Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Corrupti dolores non optio, nostrum id odio, ad fugiat
+                                tempora atque consequatur ipsa cum deleniti? Tenetur, deleniti? Fuga, iure. Praesentium,
+                                molestiae eius! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                                eum itaque ab aspernatur nulla dicta blanditiis dolorum distinctio? Enim sapiente natus
+                                ex quis officia tempora nisi voluptas quasi! Non, nesciunt.
+                                lorem
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Aqui termina el contenedor del comentario del usuario -->
+            <!-- Esto es el contenedor del comentario de un usuario -->
+            <div id="user" class="flex space-x-4 w-full justify-between mb-12">
+                <!-- Esto es el contenedor de la imagen -->
+                <div id="img-left" class="">
+                    <img src="./img/user-img.jpg" class="w-96 rounded-full">
+                </div>
+                <!-- Aqui termina el contenedor de la imagen-->
+
+                <!-- Esto es el contenedor todos los comentarios de los usuarios -->
+                <div id="right" class="flex flex-col ml-5">
+                    <!-- Esto es el contenedor del contenido del comentario de un usuario -->
+                    <div id="data">
+                        <h1 class="text-xl">Juan Perez</h1>
+                        <div id="stars" class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <div id="contain" class="pr-20">
+                            <p class="text-sm">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quisquam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni atque
+                                saepe, ratione impedit hic cum similique delectus, assumenda aliquam nostrum libero aut
+                                autem provident itaque nemo? Esse laudantium quod vero. Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Corrupti dolores non optio, nostrum id odio, ad fugiat
+                                tempora atque consequatur ipsa cum deleniti? Tenetur, deleniti? Fuga, iure. Praesentium,
+                                molestiae eius! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                                eum itaque ab aspernatur nulla dicta blanditiis dolorum distinctio? Enim sapiente natus
+                                ex quis officia tempora nisi voluptas quasi! Non, nesciunt.
+                                lorem
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Aqui termina el contenedor del comentario del usuario -->
+        </div>
+    </main>
+    <footer class="flex w-full h-auto bottom-0 mt-10 bg-amber-500 items-center flex-row">
+        <div class="container flex justify-center items-center py-4">
+            <div class="texto">
+                <h1>Proyecto integrador</h1>
+                <h1>Integrantes del equipo:</h1>
+                <ol>
+                    <li>Fortunato Ramirez Del Angel</li>
+                    <li>Reyes Bautista Rivera</li>
+                    <li>Julio Cesar Salazar Hernandez</li>
+                    <li>Fernando Bautista Hernandez</li>
+                </ol>
+            </div>
+        </div>
+        <div class="border-l-2 h-40 border-amber-600 "></div>
+        <div class="container flex justify-center items-center">
+            <div class="text-center">
+                <h1>UNIVERSIDAD TECNOLOGICA DE LA HUASTECA HIDALGUENSE</h1>
+                <h1>TECNICO SUPERIOR UNIVERSITARIO EN TECNOLOGÍAS DE LA INFORMACIÓN ÁREA: DESARROLLO DE SOFTWARE
+                    MULTIPLATAFORMA</h1>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

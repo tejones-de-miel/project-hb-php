@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <script src="./js/tailwindcss.js"></script>
+    <link rel="stylesheet" href="./css/pedido.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <header>
+        <div class="">
+            <nav class="flex justify-between fixed w-full top-0 items-center bg-amber-400 px-4 py-2 h-16">
+                <a class="flex justify-center items-center" href="./index.html">
+                    <img src="./img/Imagen3.png" alt="" class="h-16 w-full">
+                </a>
+                <div>
+                    <ul class="flex mr-16">
+                        <li>
+                            <a class="px-5 text-white font-semibold hover:text-black transition duration-600 ease-in-out"
+                                href="./index.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a class="px-5 text-white font-semibold hover:text-black transition duration-600 ease-in-out"
+                                href="./comentarios.html">
+                                Comentarios
+                            </a>
+                        </li>
+                        <li>
+                            <a class="px-5 text-white font-semibold hover:text-black transition duration-600 ease-in-out"
+                                href="./lista-pedidos.html">
+                                Pedido
+                            </a>
+                        </li>
+                        <li>
+                            <a class="px-5 text-white font-semibold hover:text-black transition duration-600 ease-in-out"
+                                href="./login.html">
+                                Iniciar sesion
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mt-24 mb-10">
+        <div
+            class="w-5/6 h-96 shadow-2xl bg-white mx-auto mt-10 rounded-2xl flex justify-between items-center space-x-8 border-2 border-gray-200">
+            <div class="h-5/6 w-full flex flex-col space-y-8 text-xl justify-center items-center">
+                <img src="./img/hh.jpg" class="rounded-2xl w-40 h-40" alt="">
+                <h2>Paquete belleza dulce</h2>
+                <div class="especificaciones flex w-full px-14 justify-between">
+                    <div id="precio" class="text-center">
+                        <h1>Precio:</h1>
+                        <span>$8000 MXN</span>
+                    </div>
+                    <div id="cantidad" class="text-center">
+                        <h1>Cantidad:</h1>
+                        <span>16 Unidades</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-5/6 w-full flex flex-col justify-between text-center">
+                <div id="cliente" class="w-full px-10 mt-8 space-y-2 text-xl">
+                    <h1>Cliente:</h1>
+                    <p>Julio Cesar Salazar Hernandez</p>
+                </div>
+                <div id="pedido" class="w-full px-10 mt-8 space-y-2 text-xl">
+                    <h1>Pedido:</h1>
+                    <p>Clave: 24HX56BH7GY</p>
+                </div>
+                <div id="operaciones" class="w-full px-10 mb-5 flex justify-center items-center mt-5">
+                    <a href="" class="text-center bg-blue-500 cursor-pointer text-white hover:bg-blue-700 py-2 px-4 rounded-xl transition ease-in-out duration-200">Ver detalles...</a>                    
+
+                </div>
+            </div>
+            <div class="h-5/6 w-full flex flex-col justify-between items-center">
+                <div id="titulo" class="flex justify-center mt-8">
+                    <h1 class="text-xl">Datos de envío:</h1>
+                </div>
+                <div id="direccion">
+                    <h1 class="text-center">Direccion:</h1>
+                    <p>Colonia Adolfo lopez mateos #12</p>
+                </div>
+                <div id="contacto" class="">
+                    <h1>No. de telefono:</h1>
+                    <span>+52 7788662255</span>
+                </div>
+                <div id="estado-pedido" class="mb-5 flex flex-col">
+                    <h1 class="text-center">Estado:</h1>
+                    <div id="status" class="flex space-x-2 items-center border-2 border-green-200 px-2 py-1 rounded-xl">
+                        <div class="h-4 w-4 bg-green-500 rounded-full"></div>
+                        <span>Completado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="w-5/6 h-96 bg-white shadow-2xl mx-auto mt-10 rounded-2xl flex justify-between items-center space-x-8 border-2 border-gray-200">
+            <div class="h-5/6 w-full flex flex-col space-y-8 text-xl justify-center items-center">
+                <img src="./img/hh.jpg" class="rounded-2xl w-40 h-40" alt="">
+                <h2>Paquete belleza dulce</h2>
+                <div class="especificaciones flex w-full px-14 justify-between">
+                    <div id="precio" class="text-center">
+                        <h1>Precio:</h1>
+                        <span>$8000 MXN</span>
+                    </div>
+                    <div id="cantidad" class="text-center">
+                        <h1>Cantidad:</h1>
+                        <span>16 Unidades</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-5/6 w-full flex flex-col justify-between text-center">
+                <div id="cliente" class="w-full px-10 mt-8 space-y-2 text-xl">
+                    <h1>Cliente:</h1>
+                    <p>Julio Cesar Salazar Hernandez</p>
+                </div>
+                <div id="pedido" class="w-full px-10 mt-8 space-y-2 text-xl">
+                    <h1>Pedido:</h1>
+                    <p>Clave: 24HX56BH7GY</p>
+                </div>
+                <div id="operaciones" class="w-full px-10 mb-5 flex justify-center items-center mt-5">
+                    <a href="" class="text-center bg-blue-500 cursor-pointer text-white hover:bg-blue-700 py-2 px-4 rounded-xl transition ease-in-out duration-200">Ver detalles...</a>                    
+
+                </div>
+            </div>
+            <div class="h-5/6 w-full flex flex-col justify-between items-center">
+                <div id="titulo" class="flex justify-center mt-8">
+                    <h1 class="text-xl">Datos de envío:</h1>
+                </div>
+                <div id="direccion">
+                    <h1 class="text-center">Direccion:</h1>
+                    <p>Colonia Adolfo lopez mateos #12</p>
+                </div>
+                <div id="contacto" class="">
+                    <h1>No. de telefono:</h1>
+                    <span>+52 7788662255</span>
+                </div>
+                <div id="estado-pedido" class="mb-5 flex flex-col">
+                    <h1 class="text-center">Estado:</h1>
+                    <div id="status" class="flex space-x-2 items-center border-2 border-red-200 px-2 py-1 rounded-xl">
+                        <div class="h-4 w-4 bg-red-500 rounded-full"></div>
+                        <span>Cancelado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="w-5/6 h-96 bg-white shadow-2xl mx-auto mt-10 rounded-2xl flex justify-between items-center space-x-8 border-2 border-gray-200">
+            <div class="h-5/6 w-full flex flex-col space-y-8 text-xl justify-center items-center">
+                <img src="./img/hh.jpg" class="rounded-2xl w-40 h-40" alt="">
+                <h2>Paquete belleza dulce</h2>
+                <div class="especificaciones flex w-full px-14 justify-between">
+                    <div id="precio" class="text-center">
+                        <h1>Precio:</h1>
+                        <span>$8000 MXN</span>
+                    </div>
+                    <div id="cantidad" class="text-center">
+                        <h1>Cantidad:</h1>
+                        <span>16 Unidades</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-5/6 w-full flex flex-col justify-between text-center">
+                <div id="cliente" class="w-full px-10 mt-8 space-y-2 text-xl">
+                    <h1>Cliente:</h1>
+                    <p>Julio Cesar Salazar Hernandez</p>
+                </div>
+                <div id="pedido" class="w-full px-10 mt-8 space-y-2 text-xl">
+                    <h1>Pedido:</h1>
+                    <p>Clave: 24HX56BH7GY</p>
+                </div>
+                <div id="operaciones" class="w-full px-10 mb-5 flex justify-center items-center mt-5">
+                    <a href=""
+                        class="text-center bg-blue-500 cursor-pointer text-white hover:bg-blue-700 py-2 px-4 rounded-xl transition ease-in-out duration-200">Ver
+                        detalles...</a>
+                </div>
+            </div>
+            <div class="h-5/6 w-full flex flex-col justify-between items-center">
+                <div id="titulo" class="flex justify-center mt-8">
+                    <h1 class="text-xl">Datos de envío:</h1>
+                </div>
+                <div id="direccion">
+                    <h1 class="text-center">Direccion:</h1>
+                    <p>Colonia Adolfo lopez mateos #12</p>
+                </div>
+                <div id="contacto" class="">
+                    <h1>No. de telefono:</h1>
+                    <span>+52 7788662255</span>
+                </div>
+                <div id="estado-pedido" class="mb-5 flex flex-col">
+                    <h1 class="text-center">Estado:</h1>
+                    <div id="status"
+                        class="flex space-x-2 items-center border-2 border-yellow-200 px-2 py-1 rounded-xl">
+                        <div class="h-4 w-4 bg-yellow-500 rounded-full"></div>
+                        <span>En espera...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="w-5/6 h-96 bg-white shadow-2xl mx-auto mt-10 rounded-2xl flex justify-between items-center space-x-8 border-2 border-gray-200">
+            <div class="h-5/6 w-full flex flex-col space-y-8 text-xl justify-center items-center">
+                <img src="./img/hh.jpg" class="rounded-2xl w-40 h-40" alt="">
+                <h2>Paquete belleza dulce</h2>
+                <div class="especificaciones flex w-full px-14 justify-between">
+                    <div id="precio" class="text-center">
+                        <h1>Precio:</h1>
+                        <span>$8000 MXN</span>
+                    </div>
+                    <div id="cantidad" class="text-center">
+                        <h1>Cantidad:</h1>
+                        <span>16 Unidades</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-5/6 w-full flex flex-col justify-between text-center">
+                <div id="cliente" class="w-full px-10 mt-8 space-y-2 text-xl">
+                    <h1>Cliente:</h1>
+                    <p>Julio Cesar Salazar Hernandez</p>
+                </div>
+                <div id="pedido" class="w-full px-10 mt-8 space-y-2 text-xl">
+                    <h1>Pedido:</h1>
+                    <p>Clave: 24HX56BH7GY</p>
+                </div>
+                <div id="operaciones" class="w-full px-10 mb-5 flex justify-center items-center mt-5">
+                    <a href=""
+                        class="text-center bg-blue-500 cursor-pointer text-white hover:bg-blue-700 py-2 px-4 rounded-xl transition ease-in-out duration-200">Ver
+                        detalles...</a>
+                </div>
+            </div>
+            <div class="h-5/6 w-full flex flex-col justify-between items-center">
+                <div id="titulo" class="flex justify-center mt-8">
+                    <h1 class="text-xl">Datos de envío:</h1>
+                </div>
+                <div id="direccion">
+                    <h1 class="text-center">Direccion:</h1>
+                    <p>Colonia Adolfo lopez mateos #12</p>
+                </div>
+                <div id="contacto" class="">
+                    <h1>No. de telefono:</h1>
+                    <span>+52 7788662255</span>
+                </div>
+                <div id="estado-pedido" class="mb-5 flex flex-col">
+                    <h1 class="text-center">Estado:</h1>
+                    <div id="status"
+                        class="flex space-x-2 items-center border-2 border-purple-200 px-2 py-1 rounded-xl">
+                        <div class="h-4 w-4 bg-purple-500 rounded-full"></div>
+                        <span>En camino...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

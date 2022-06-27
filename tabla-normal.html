@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <link rel="stylesheet" href="./css/table-style.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr class="head-table">
+                    <th>Proyectos</th>
+                    <th>Costo</th>
+                    <th>Estado</th>
+                    <th>Usuario</th>
+                    <th>Progreso</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>React Tailwind Dashboard</td>
+                    <td>MXN $50000</td>
+                    <td>Pendiente</td>
+                    <td>Carlos</td>
+                    <td>70%</td>
+                    <td>
+                        <div class="acciones">
+                            <a href="" class="mas-opciones" id="btn-opciones">
+                                <i>.</i>
+                                <i>.</i>
+                                <i>.</i>
+                            </a>
+                            <div class="opciones">
+                                <a href="">Modificar</a>
+                                <a href="">Eliminar</a>
+                                <a href="">Ver estado</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/table-dropdown.js"></script>
+</body>
+</html>

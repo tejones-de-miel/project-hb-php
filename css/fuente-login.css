@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Almond Nougat';
+    src: url('../fonts/almond_nougat/Almond Nougat.otf') format("opentype");
+}
+
+.AlmondNougat {
+    font-family: 'Almond Nougat'!important;
+}

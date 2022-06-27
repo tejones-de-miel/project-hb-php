@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Inicio</title>
+    <script src="./js/tailwindcss.js"></script>
+</head>
+
+<body class="font-sans bg-gray-100">
+    <!-- Esto es la barra de navegacion -->
+    <header>
+        <nav class="flex justify-between fixed flex-wrap w-full top-0 items-center bg-amber-400 py-2">
+            <a class="flex justify-center items-center" href="./index.html">
+                <img src="./img/Imagen3.png" alt="" class="h-16 w-full">
+            </a>
+            <div class="block md:hidden flex flex-col items-center justify-center">
+                <a id='boton' class="flex items-center justify-center flex-col space-y-1 h-16 w-16 mr-4 bg-amber-400 rounded-full inline-flex leading-5">
+                    <div class="rounded-full border-4 border-gray-700 w-12"></div>
+                    <div class="rounded-full border-4 border-gray-700 w-12"></div>
+                    <div class="rounded-full border-4 border-gray-700 w-12"></div>
+                </a>
+            </div>
+            <div class="w-full block md:flex md:items-center md:w-auto hidden max-h-0 transition-all duration-500 md:transition-none" id="menu">
+                <div>
+                    <ul class="text-sm md:flex">
+                        <li>
+                            <a class="px-5 text-white font-semibold hover:text-black transition duration-600 ease-in-out"
+                                href="./index.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a class="block mt-4 md:inline-block md:mt-0 px-5 text-white font-semibold hover:text-black transition duration-600 ease-in-out"
+                                href="./comentarios.html">
+                                Comentarios
+                            </a>
+                        </li>
+                        <li>
+                            <a class="block mt-4 md:inline-block md:mt-0 px-5 text-white font-semibold hover:text-black transition duration-600 ease-in-out"
+                                href="./lista-pedidos.html">
+                                Pedido
+                            </a>
+                        </li>
+                        <li>
+                            <a class="block mt-4 md:inline-block md:mt-0 px-5 text-white font-semibold hover:text-black transition duration-600 ease-in-out"
+                                href="./login.html">
+                                Iniciar sesion
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Aqui termina la barra de navegacion -->
+
+    <!-- Aqui empieza el contenido -->
+    <main class="flex flex-wrap justify-center border-2 bg-white shadow-2xl mt-28 rounded-xl pb-16 w-11/12 mx-auto">
+        <div class="flex flex-col items-center justify-center w-full">
+            <div class="w-full p-2 items-center flex flex-wrap">
+                <div>
+                    <div class="title">
+                        <h1 class="text-center text-2xl font-bold">Honey Beauty</h1>
+                    </div>
+                    <div class="mt-5 justify-center flex">
+                        <img src="./img/hh.jpg" alt="" class="rounded-2xl border-2 w-1/2">
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap">
+                    <div class="w-full p-2">
+                        <h1 class="text-3xl font-bold text-center">
+                            <span class="text-gray-600">Producto</span>
+                            <span class="text-black">con Miel</span>
+                        </h1>
+                        <p class="text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quisquam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo sit
+                            voluptatibus odio reprehenderit ducimus eum iste iusto praesentium rem! Neque porro
+                            accusantium harum ullam perspiciatis inventore laborum dolores praesentium.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="boton">
+            <button
+                class="bg-amber-600 hover:bg-amber-800 text-white font-bold py-4 px-8 rounded-2xl transition duration-500">
+                <a href="" class="flex items-center">
+                    <span>
+                        Ver productos
+                    </span>
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-5 flex mt-1" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                            <path fill-rule="evenodd"
+                                d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </i>
+                </a>
+            </button>
+        </div>
+
+    </main>
+
+    <footer class="w-full flex static space-y-4 h-auto bottom-0 mt-10 overflow-x-clip bg-amber-500 items-center justify-between flex-col md:flex-row py-2">
+        <div class="container flex justify-center items-center">
+            <div class="text-center">
+                <h1>UNIVERSIDAD TECNOLOGICA DE LA HUASTECA HIDALGUENSE</h1>
+                <h1>TECNICO SUPERIOR UNIVERSITARIO EN TECNOLOGÍAS DE LA INFORMACIÓN ÁREA: DESARROLLO DE SOFTWARE
+                    MULTIPLATAFORMA</h1>
+                </div>
+            </div>
+            <div class="md:border-l-2 md:border-t-0 border-t-2 md:h-40 w-5/6 md:w-0 border-amber-600 "></div>
+            <div class="container flex justify-center ml-2 items-center">
+                <div class="texto">
+                    <h1>Proyecto integrador</h1>
+                    <h1>Integrantes del equipo:</h1>
+                    <ol>
+                        <li>Fortunato Ramirez Del Angel</li>
+                        <li>Reyes Bautista Rivera</li>
+                        <li>Julio Cesar Salazar Hernandez</li>
+                        <li>Fernando Bautista Hernandez</li>
+                    </ol>
+                </div>
+            </div>
+    </footer>
+    <script src="./js/dropDown.js"></script>
+
+</body>
+
+</html>
